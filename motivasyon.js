@@ -4,7 +4,7 @@ const fs = require('fs');
 const axios = require('axios');
 const IQDESC = "Yanıtladığınız kişinin iq testini ölçer.";
 
-Asena.addCommand({pattern: 'motivasyon', fromMe: true, desc: IQDESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'motivasyon', fromMe: false, desc: IQDESC }, (async (message, match) => {
 
     if (message.reply_message === false) return await message.sendMessage('```Lütfen bir mesaja yanıt verin!```');
 
